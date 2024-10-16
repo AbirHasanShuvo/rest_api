@@ -41,8 +41,10 @@ class _HomeScreenState extends State<HomeScreen> {
             leading: ClipRRect(
                 borderRadius: BorderRadius.circular(100),
                 child: Image.network(imageUrl)),
-            title: Text(email),
-            subtitle: Text(name),
+            title: Text(email, style: GoogleFonts.lato()),
+            subtitle: Text(name,
+                style: GoogleFonts.merriweather(
+                    fontSize: 14, fontWeight: FontWeight.w800)),
           );
         },
       ),
