@@ -40,6 +40,10 @@ class _HomeScreenState extends State<HomeScreen> {
           return ListTile(
             title: Text(user.fullName, style: GoogleFonts.lato()),
             subtitle: Text(user.location.country),
+            leading: ClipRRect(
+              borderRadius: BorderRadius.circular(100),
+              child: Image.network(user.picture.thumbnail),
+            ),
           );
         },
       ),
